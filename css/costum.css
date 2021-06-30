@@ -372,11 +372,11 @@ body {
     left: 30px;
     top: -2px;
   }
-  .navbar {
+  .nav{
     background-color: #333232;
     margin-top: 35px;
     height: 60px;
-    position: relative;
+    position: fixed;
   }
   .navbar .navbar-brand {
     margin: auto;
