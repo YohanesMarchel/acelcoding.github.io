@@ -342,6 +342,8 @@
           btnSend.classList.toggle('d-none');
           console.log('Success!', response)
           alert('Pesan anda TERKIRIM !');
+        // reset form
+        form.reset();
     })
       .catch(error => console.error('Error!', error.message))
   })
