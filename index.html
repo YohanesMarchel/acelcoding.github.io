@@ -284,7 +284,11 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="submit" class="btn btn-danger" name="submit" value="KIRIM">
+                                <input type="submit" class="btn btn-danger btn-send" name="submit" value="KIRIM">
+                                <button class="btn btn-danger btn-loading" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                      Loading...
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -319,8 +323,16 @@
         <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxeudLjA9mcXUGpviyp_Ou5NBaS9GXGaqBhIF4qDVnW6_2edARWTJ1P7Bx7QBT9ZsHzyg/exec'
   const form = document.forms['input-form-ac']
+  
+  const btnSend = document.querySelector('.btn-send');
+  const btnLoad = document.querySelector('.btn-loading');
 
   form.addEventListener('submit', e => {
+      
+   // when button "krirm" on klik.
+   // view button "loading" , hidden button "kirim"
+      btnLoad.classList.toggle('d-none');
+      btnSend.classList.toggle('d-none');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
