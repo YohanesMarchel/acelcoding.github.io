@@ -175,7 +175,7 @@ body {
   }
   .fitures .fitures-main-img {
     position: absolute;
-    width: 600px;
+    width: 400px;
     right: 30px;
     top: -100px;
     border-radius: 80px 0 80px 0;
@@ -188,7 +188,7 @@ body {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
   .contact-nav {
     background: linear-gradient(to right, brown, black);
     height: 40px;
@@ -483,11 +483,11 @@ body {
     margin-left: 20px;
   }
   .fitures-main-img {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     border-radius: 0 30% 0 30%;
     top: -430px;
-    right: 250px;
+    right: 290px;
     position: relative;
     z-index: -1;
   }
@@ -495,8 +495,8 @@ body {
     z-index: -2;
   }
   .portfolio img {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=costum.css.map */
