@@ -38,7 +38,6 @@ li a i {
   clip-path: circle(800px at left 960px);
   z-index: -1;
 }
-
 body {
   overflow-x: hidden;
 }
@@ -372,7 +371,7 @@ body {
     left: 30px;
     top: -2px;
   }
-  .navbar{
+  .navbar {
     background-color: #333232;
     margin-top: 35px;
     height: 60px;
