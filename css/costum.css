@@ -46,6 +46,10 @@ body {
   width: 100%;
 }
 
+.footer .about-office {
+    margin-top: 60px;
+  }
+
 @media (min-width: 992px) {
   .contact-nav {
     background: linear-gradient(to right, brown, black);
@@ -184,9 +188,6 @@ body {
   }
   .footer {
     margin-top: 300PX;
-  }
-  .footer .about-office {
-    margin-top: 50px;
   }
 }
 
