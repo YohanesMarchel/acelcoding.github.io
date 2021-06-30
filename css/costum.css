@@ -185,6 +185,9 @@ body {
   .footer {
     margin-top: 300PX;
   }
+  .footer .about-office {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
