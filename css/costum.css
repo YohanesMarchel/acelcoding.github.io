@@ -475,6 +475,11 @@ body {
     display: flex;
     justify-content: space-around;
   }
+  
+  .regis-member .main img{
+    width: 300px;
+}
+  
   .regis-member .register {
     margin-left: 0px;
   }
