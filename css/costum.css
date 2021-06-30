@@ -501,5 +501,39 @@ body {
     width: 300px;
     height: 200px;
   }
+  
+  //=====================ON ANIMATED NAVBAR SCROLL=========================//
+    .nav-animated {
+      background-color: rgb(51, 50, 50);
+      height: 50px;
+      margin-top: 0;
+    }
+    .nav-animated li {
+      margin-top: -3px;
+      font-size: 15px;
+    }
+    .nav-animated li:hover .link{
+      color: brown;
+    }
+    .nav-animated li:hover i{
+      color:brown ;
+    }
+    .nav-animated li a{
+      color: white;
+    }
+    .nav-animated li a i{
+      color: white;
+    }
+    .nav-animated .btn-burger {
+      display: none;
+    }
+    .nav-animated .costum-btn {
+      margin-top: -8px;
+      font-size: 12px;
+      transition: 0.5s;
+    }
+    .navbar-brand{
+      margin-top: -5px;
+    }
 }
 /*# sourceMappingURL=costum.css.map */
