@@ -351,6 +351,9 @@ body {
 }
 
 @media (max-width: 575.98px) {
+   body{
+    overflow-x: hidden;
+  }    
   .contact-nav {
     position: fixed;
     z-index: 2;
