@@ -372,7 +372,7 @@ body {
     left: 30px;
     top: -2px;
   }
-  nav{
+  .navbar{
     background-color: #333232;
     margin-top: 35px;
     height: 60px;
