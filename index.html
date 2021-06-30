@@ -336,8 +336,12 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        console.log('Success!', response)
-        alert('Pesan anda TERKIRIM !');
+        // when button "krirm" on klik.
+       // hidden button "loading" , back button "kirim"
+          btnLoad.classList.toggle('d-none');
+          btnSend.classList.toggle('d-none');
+          console.log('Success!', response)
+          alert('Pesan anda TERKIRIM !');
     })
       .catch(error => console.error('Error!', error.message))
   })
