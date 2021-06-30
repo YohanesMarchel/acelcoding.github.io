@@ -335,7 +335,10 @@
       btnSend.classList.toggle('d-none');
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        console.log('Success!', response)
+        alert('Pesan anda TERKIRIM !');
+    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
