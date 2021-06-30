@@ -268,7 +268,7 @@
                     <div class="row">
                         <h1>Contact Me</h1>
                     </div>
-                    <form action="/contact/" method="POST">
+                    <form action="/contact/" method="POST" name="input-form-ac">
                         <div class="row mb-3">
                             <div class="col-lg">
                                 <input class="form-control" type="text" placeholder="Masukan Nama" aria-label="default input example" name="name" required/>
@@ -315,5 +315,17 @@
         <!-- Costum -->
         <script src="js/costum.js"></script>
         <script src="js/app_contact.js"></script>
+        
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxeudLjA9mcXUGpviyp_Ou5NBaS9GXGaqBhIF4qDVnW6_2edARWTJ1P7Bx7QBT9ZsHzyg/exec'
+  const form = document.forms['input-form-ac']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
     </body>
 </html>
