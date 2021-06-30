@@ -376,6 +376,7 @@ body {
     background-color: #333232;
     margin-top: 35px;
     height: 60px;
+    position: relative;
   }
   .navbar .navbar-brand {
     margin: auto;
