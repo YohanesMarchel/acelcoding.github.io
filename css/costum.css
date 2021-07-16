@@ -475,10 +475,6 @@ body {
     height: 750px;
     width: 100%;
   }
-  .regis-member .main {
-    display: flex;
-    justify-content: space-around;
-  }
   
   .regis-member .register {
     margin-left: 0px;
