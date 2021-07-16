@@ -479,6 +479,10 @@ body {
   .regis-member .register {
     margin-left: 0px;
   }
+  .regis-member img{
+    margin-left:-100px
+  }
+  
   .fitures {
     margin-top: 400px;
   }
